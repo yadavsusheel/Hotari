@@ -1,5 +1,8 @@
 package election;
-	 class LinkListNode
+
+import java.util.Scanner;
+
+class LinkListNode
 	{
 		public int data;
 	    public LinkListNode next;
@@ -65,14 +68,13 @@ package election;
    public class ReduceReduandancy {
    
        public static void main(String[] args) {
+    	   Scanner scan=new Scanner(System.in);
+    	   int n=scan.nextInt();
     	 LinkList link1=new LinkList();
-	     link1.insertNode(1);
-	     link1.insertNode(2);
-	     link1.insertNode(2);
-	     link1.insertNode(2);
-	     link1.insertNode(3);
-	     link1.insertNode(3);
-	     link1.insertNode(5);
+    	 for(int i=0;i<n;i++)
+    	 {
+    	 link1.insertNode(scan.nextInt());
+    	 }
 	     link1.printList();
 	     link1.removeRedundancy();
 	     System.out.println();

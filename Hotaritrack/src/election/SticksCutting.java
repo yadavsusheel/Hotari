@@ -1,6 +1,7 @@
 package election;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 public class SticksCutting {
 	public static ArrayList<Integer> newList=new ArrayList<Integer>();
 	public void stickCutting(ArrayList<Integer> list) throws Exception
@@ -31,11 +32,11 @@ public class SticksCutting {
 		}
 		stickCutting(list);}
 	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int n=scan.nextInt();
 		ArrayList<Integer> list=new ArrayList<Integer>();
-		list.add(1);
-		list.add(1);
-		list.add(2);
-		list.add(3);
+		for(int i=0;i<n;i++)
+		list.add(scan.nextInt());
 		SticksCutting sticks=new SticksCutting();
 		try
 		{

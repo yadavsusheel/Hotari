@@ -1,10 +1,12 @@
 package election;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
 public class CheckDivisibility {   
    public static  ArrayList<String> arr=new ArrayList<String>();
 	public static void main(String[] args) {
-		String number="12345";
+		Scanner scan=new Scanner(System.in);
+		String number=scan.next();
 		int n=number.length();
 		CheckDivisibility check=new CheckDivisibility();
 		check.permutation(number,0,n-1);
